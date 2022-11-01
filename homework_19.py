@@ -32,12 +32,17 @@ while candy > 0:
             print('Вы жульничаете, начните заново!!!')
             break
         print(f'После вашего хода осталось {candy} кофет')
-        m = int(randint(1, 29))
-        print(f'Бот взял: {m}')
-        candy -= m
-        if candy <= 0:
-            print('Бот выиграл!!!')
-            break
+        if candy > 100:
+            m = int(randint(1, 29))
+            print(f'Бот взял: {m}')
+            candy -= m
+        if candy < 100:
+            m = candy % 29
+            print(f'Бот взял: {m}')
+            candy -= m
+            if candy <= 0:
+                print('Бот выиграл!!!')
+                break
         print(f'После хода бота осталось {candy} конфет')
     
     
