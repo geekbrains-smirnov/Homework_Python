@@ -1,0 +1,10 @@
+Ivanov,Ivan,88888888888,home;
+Sidorov
+Sidor
+9999999999
+work;
+Petrov,Petr,777777777,work;
+Kakakukukiki
+Helen
+22222222
+hui;
